@@ -10972,72 +10972,64 @@ section.resume-section .resume-section-content {
   }
 }
 
-@import "bourbon";
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
 
-$color_purple: #5133AB;
-$color_red: #AC193D;
-$color_orange: #DC572E;
-$color_green: #00A600;
-$color_blue: #2672EC;
+.card {
+  width: 18rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-$base_font_size: 14px;
-$base_line_height: 1.5em;
-$text_font_family: 'Open Sans', "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-$display_font_family: 'Open Sans', "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-.tile {  
+.card-img-top {
   width: 100%;
-	display: inline-block;
-	box-sizing: border-box;
-	background: #fff;		
-	padding: 20px;
-	margin-bottom: 10px;
-  
-  .title {
-		margin-top: 0px;
-	}
-  
-  &.purple, &.blue, &.red, &.orange, &.green {
-    color: #fff;
-  }
-  
-  &.purple {
-    background: $color_purple;
+  height: 150px;
+  object-fit: cover;
+}
 
-		&:hover {
-			background: darken($color_purple, 10%);
-		}		
-  }
-  
-  &.red {
-    background: $color_red;
+.card-body {
+  padding: 20px;
+}
 
-		&:hover {
-			background: darken($color_red, 10%);
-		}		
-  }
-  
-  &.green {
-    background: $color_green;
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
-		&:hover {
-			background: darken($color_green, 10%);
-		}		
-  }
-  
-  &.blue {
-    background: $color_blue;
+.card-text {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
 
-		&:hover {
-			background: darken($color_blue, 10%);
-		}	
-  }
-  
-  &.orange {
-    background: $color_orange;
+.btn-custom {
+  display: inline-block;
+  background-color: #E29CAD;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
 
-		&:hover {
-			background: darken($color_orange, 10%);
-		}	
-  }
+.btn-custom:hover {
+  background-color: #cc8b9a; /* 10% darker */
+}
+
+.card img {
+  border-bottom: 1px solid #f0f0f0;
 }

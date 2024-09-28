@@ -15,6 +15,7 @@
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
+  --bs-emily-pink: #F2C6C2;
   --bs-red: #dc3545;
   --bs-orange: #bd5d38;
   --bs-yellow: #ffc107;
@@ -74,7 +75,7 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #F2C6C2;
-  --bs-link-hover-color: #974a2d;
+  --bs-link-hover-color: #D99F9A;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }

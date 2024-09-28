@@ -10975,14 +10975,14 @@ section.resume-section .resume-section-content {
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 40px; /* Increased gap for more space between cards */
   justify-items: center;
   padding: 20px;
 }
 
 .card {
   width: 18rem;
-  background-color: #fff;
+  background-color: #8E6E76;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
